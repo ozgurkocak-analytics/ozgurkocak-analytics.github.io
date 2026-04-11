@@ -6,46 +6,61 @@
     <title>Ozgur Kocak | Portfolio</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #333; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #2980b9; margin-top: 30px; }
-        .project { border-left: 5px solid #3498db; padding: 15px 20px; margin-bottom: 30px; background-color: #f9f9f9; border-radius: 0 5px 5px 0; }
+        h1 { color: #2c3e50; margin-bottom: 5px; }
+        h2 { color: #2980b9; margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        
+        .header-container { display: flex; align-items: center; gap: 30px; margin-bottom: 30px; border-bottom: 2px solid #3498db; padding-bottom: 20px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #3498db; flex-shrink: 0; }
+        
+        .project { border-left: 5px solid #3498db; padding: 15px 20px; margin-bottom: 40px; background-color: #f9f9f9; border-radius: 0 5px 5px 0; }
         .project h3 { margin-top: 0; color: #2c3e50; }
         .project p { margin-bottom: 15px; }
-        .project a { text-decoration: none; color: #3498db; font-weight: bold; border: 1px solid #3498db; padding: 5px 12px; border-radius: 4px; transition: 0.3s; }
+        
+        /* Görselleri alt alta sıralamak için liste yapısı */
+        .img-list { display: flex; flex-direction: column; gap: 20px; margin: 20px 0; }
+        .img-list img { width: 100%; height: auto; border-radius: 5px; border: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        .project a { text-decoration: none; color: #3498db; font-weight: bold; border: 1px solid #3498db; padding: 5px 12px; border-radius: 4px; transition: 0.3s; display: inline-block; margin-top: 10px; }
         .project a:hover { background-color: #3498db; color: white; }
+        
+        .contact-info { margin-top: 10px; font-weight: bold; }
         .tech-stack { font-size: 0.9em; color: #666; font-style: italic; margin-bottom: 10px; }
+
+        /* Mobil uyumluluk için küçük bir ayar */
+        @media (max-width: 600px) {
+            .header-container { flex-direction: column; text-align: center; }
+        }
     </style>
 </head>
 <body>
-    <h1>Ozgur Kocak</h1>
-    <p><strong>Data & Business Intelligence Professional | Mechanical Engineer</strong></p>
-    <p>📧 Email: <a href="mailto:ozgurkocak@gmail.com">ozgurkocak@gmail.com</a> |
+
+    <div class="header-container">
+        <img src="profile.jpg" alt="Ozgur Kocak" class="profile-img">
+        <div>
+            <h1>Ozgur Kocak</h1>
+            <p><strong>Data & Business Intelligence Professional | Mechanical Engineer</strong></p>
+            <div class="contact-info">
+                📧 <a href="mailto:ozgurkocak@gmail.com">ozgurkocak@gmail.com</a> | 
+                🔗 <a href="https://www.linkedin.com/in/okocak/" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+    </div>
+
     <p>Data and BI professional with an engineering background and strong business focus, delivering data-driven decision support in regulated, high-responsibility environments. Expertise across SQL-based systems, cloud data platforms, and BI tools, focused on quality, clarity, and business impact.</p>
 
     <h2>Featured Projects</h2>
 
     <div class="project">
-        <h3>dbt-databricks-powerbi-project</h3>
+        <h3>1. dbt-databricks-powerbi-project</h3>
         <p class="tech-stack">Tech: dbt Core, Databricks, SQL</p>
         <p>End-to-end data pipeline focused on modern data stack transformation logic and scalable data modeling.</p>
+        <div class="img-list">
+            <img src="1_1.jpg" alt="dbt Project Screenshot 1">
+            <img src="1_2.jpg" alt="dbt Project Screenshot 2">
+        </div>
         <a href="https://github.com/ozgurkocak-analytics/dbt-databricks-powerbi-project" target="_blank">View on GitHub</a>
     </div>
 
     <div class="project">
-        <h3>Azure Seismic Data Pipeline</h3>
-        <p class="tech-stack">Tech: Azure Synapse, Serverless SQL, DirectQuery, Power BI</p>
-        <p>Automated cloud-based pipeline for near real-time earthquake analytics, featuring automated ingestion and alerting systems.</p>
-        <a href="https://github.com/ozgurkocak-analytics/azure-seismic-data-pipeline" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>Real Estate Valuation Analytics</h3>
-        <p class="tech-stack">Tech: Power BI, Data Modeling, Business Intelligence</p>
-        <p>A specialized dashboard focused on operational efficiency, risk management, and financial performance for real estate valuation in Turkey.</p>
-        <a href="https://github.com/ozgurkocak-analytics/real-estate-valuation-analytics" target="_blank">View on GitHub</a>
-    </div>
-
-    <hr>
-    <p style="text-align: center; color: #999;">&copy; 2026 Ozgur Kocak - Powered by GitHub Pages</p>
-</body>
-</html>
+        <h3>2. Azure Seismic Data Pipeline</h3>
+        <p class="tech-stack">Tech: Azure Synapse, Serverless SQL, DirectQuery, Power BI
