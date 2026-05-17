@@ -58,7 +58,31 @@
     <h2>Featured Projects</h2>
 
     <div class="project">
-        <h3>1. End-to-End Analytics Engineering Project (dbt + Databricks + Power BI)</h3>
+    <h3>1. Real-Time E-Commerce Analytics Pipeline (Kafka + Spark + dbt + Power BI)</h3>
+
+    <p class="tech-stack">
+        Tech: Python, Confluent Cloud Kafka, Databricks Spark, Delta Lake, dbt, Power BI
+    </p>
+
+    <p>
+        End-to-end real-time analytics pipeline simulating e-commerce order events with Kafka streaming architecture. 
+        Python producers publish JSON events into Confluent Cloud Kafka, while Databricks Spark consumes and processes 
+        near real-time streaming data into Delta Lake gold tables. dbt incremental models generate historical analytical marts, 
+        and Power BI combines DirectQuery operational dashboards with imported historical analytics.
+    </p>
+
+    <div class="img-list">
+        <img src="5_1.jpg" alt="Kafka Real-Time Pipeline Architecture">
+        <img src="5_2.jpg" alt="Incremental Loading with dbt">
+    </div>
+
+    <a href="https://github.com/ozgurkocak-analytics/kafka-realtime-analytics-pipeline" target="_blank">
+        View on GitHub →
+    </a>
+</div>
+
+    <div class="project">
+        <h3>2. End-to-End Analytics Engineering Project (dbt + Databricks + Power BI)</h3>
         <p class="tech-stack">Tech: dbt Core, Databricks, SQL, Power BI</p>
         <p>End-to-end analytics engineering project using dbt and Databricks, implementing medallion architecture (bronze/silver/gold), SCD Type 2 for historical tracking, and automated data quality testing; delivered business insights via Power BI dashboard.</p>
         <div class="img-list">
@@ -70,7 +94,7 @@
     </div>
 
     <div class="project">
-        <h3>2. Azure Seismic Data Pipeline</h3>
+        <h3>3. Azure Seismic Data Pipeline</h3>
         <p class="tech-stack">Tech: Azure Data Factory, Synapse Analytics, Serverless SQL, DirectQuery, Power BI</p>
         <p>End-to-end seismic data analytics pipeline using Azure Data Factory, Synapse Analytics and Power BI DirectQuery, enabling near real-time earthquake monitoring</p>
         <div class="img-list">
@@ -82,7 +106,7 @@
     </div>
 
     <div class="project">
-        <h3>3. Real Estate Valuation Analytics</h3>
+        <h3>4. Real Estate Valuation Analytics</h3>
         <p class="tech-stack">Tech: Power BI, R (Outlier Analysis), Data Modeling, Business Intelligence</p>
         <p>A specialized BI dashboard focused on operational efficiency, risk management, and financial performance for real estate valuation in Turkey.</p>
         
@@ -98,7 +122,7 @@
     </div>
 
     <div class="project">
-        <h3>4. End-to-End IoT Asset Monitoring & Risk Assessment (dbt + Databricks + Tableau)</h3>
+        <h3>5. End-to-End IoT Asset Monitoring & Risk Assessment (dbt + Databricks + Tableau)</h3>
         <p class="tech-stack">Tech: dbt Core, Databricks, SQL, Tableau</p>
         <p>An end-to-end IoT analytics project focusing on device fleet health. It implements geofencing boundary violation monitoring and performs root cause analysis on battery depletion. The project highlights how low signal strength significantly impacts battery life, processed via Medallion Architecture on Databricks and visualized in Tableau.</p>
         
